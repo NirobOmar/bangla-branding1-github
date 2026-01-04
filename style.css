@@ -1,0 +1,149 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@import "tailwindcss"
+
+
+body{
+  border: 2px solid #d7cbd5;
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+
+#header{
+    
+}
+
+#header-area{
+    
+}
+
+#header-menu{
+    display: flex;
+   
+}
+
+
+
+
+
+
+.logo img{
+    
+}
+
+.menu-bar{
+  ;
+  
+  
+}
+.menu-bar ul{
+    display: flex;
+    list-style: none; 
+    gap: 50px;
+    
+    
+    
+}
+
+.menu-bar ul li{
+  
+  
+}
+.menu-bar ul li a {
+  
+  
+  text-decoration: none;
+  transition: all 0.5s ease;
+  font-size: 20px;
+  
+
+  
+  
+}
+
+.menu-bar ul li a::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color:black;
+  visibility: hidden;
+  clip: rect(0, 0, 0, 0);
+  transition: all 0.5s ease;
+ }
+ 
+
+ 
+ .menu-bar ul li a:hover {
+   color: black;
+  animation: neonFlicker 1.5s infinite alternate;
+ }
+
+
+
+.menu-bar ul li a:hover::before {
+  visibility: visible;
+  clip: rect(0, 900px, 0, 0);
+  animation: neonFlicker 1.5s infinite alternate;
+}
+@keyframes neonFlicker {
+  0%, 100% {
+    text-shadow: 0 0 5px #5753e2, 0 0 10px #5753e2, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;
+  }
+  50% {
+    text-shadow: 0 0 5px #5753e2, 0 0 10px #5753e2, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 75px #ff00ff;
+  }
+}
+
+ 
+ @keyframes gradient-89 {
+   0% { background-position: 100% 0%; }
+   50% { background-position: 0% 0%; }
+   100% { background-position: 100% 0%; }
+ }
+
+
+
+
+#Slider-area img{
+  max-width: 100%;
+
+}
+
+
+p span{
+    font-weight: bold;
+}
+
+#Product-area {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+margin-left: 2.5%;
+}
+#Product-fild {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e3dbe3;
+  flex: 1/3;
+  gap: 10px;
+}
+
+#Product-fild img{
+    width: 400px;
+    height: 400px;
+}
+
+
+#Product-fild h2 {
+ 
+}
